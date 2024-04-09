@@ -1,0 +1,11 @@
+<mat-sidenav-container autosize="true">
+  <mat-sidenav opened="true" mode="side">
+    <div class="opciones">
+      <h3 *ngIf="expanded">Opciones del sistema</h3>
+    </div>
+    <app-menu (onToggleExpanded)="toggleExpanded($event)"/>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <app-header />
+  </mat-sidenav-content>
+</mat-sidenav-container>
