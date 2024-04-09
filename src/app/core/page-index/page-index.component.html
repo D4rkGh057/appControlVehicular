@@ -3,9 +3,10 @@
     <div class="opciones">
       <h3 *ngIf="expanded">Opciones del sistema</h3>
     </div>
-    <app-menu (onToggleExpanded)="toggleExpanded($event)"/>
+    <app-menu (onToggleExpanded)="toggleExpanded($event)" />
   </mat-sidenav>
   <mat-sidenav-content>
     <app-header />
+    <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
