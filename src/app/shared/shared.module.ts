@@ -7,6 +7,11 @@ import { TittleComponent } from './tittle/tittle.component';
 import { PruebaComponent } from './prueba/prueba.component';
 import { ContainerComponent } from './container/container.component';
 import { TableComponent } from './table/table.component';
+import { MatCardModule } from '@angular/material/card';
+import {MatTableModule} from '@angular/material/table';
+import { FlexModule } from '@angular/flex-layout';
+import {NgScrollbarModule} from 'ngx-scrollbar';
+import {MatPaginatorModule} from '@angular/material/paginator';
 
 
 
@@ -14,8 +19,12 @@ import { TableComponent } from './table/table.component';
   declarations: [HeaderComponent,PaginatorComponent,TittleComponent, PruebaComponent, ContainerComponent, TableComponent],
   imports: [
     CommonModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatCardModule,
+    FlexModule,
+    MatTableModule,
+    MatPaginatorModule
   ],
-  exports:[HeaderComponent,PaginatorComponent,TittleComponent, PruebaComponent, ContainerComponent, TableComponent]
+  exports:[HeaderComponent,PaginatorComponent,TittleComponent, PruebaComponent, ContainerComponent, TableComponent,NgScrollbarModule,FlexModule]
 })
 export class SharedModule { }

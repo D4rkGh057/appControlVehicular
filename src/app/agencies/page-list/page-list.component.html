@@ -1,1 +1,12 @@
 <app-tittle></app-tittle>
+<app-container>
+  <ng-scrollbar class="heightMaxScrollbar">
+    <app-table [data]="data" [metaDataColumns]="metaDataColumns"></app-table>
+  </ng-scrollbar>
+  <app-paginator
+    fxLayout
+    fxLayoutAlign="end center"
+    [length]="totalRecords"
+    (onChangePage)="changePage($event)"
+  ></app-paginator>
+</app-container>
