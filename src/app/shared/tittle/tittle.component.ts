@@ -3,7 +3,7 @@ import { IMenu, MenuService } from '../../services/menu.service';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-tittle',
+  selector: 'app-title',
 
   templateUrl: './tittle.component.html',
   styleUrl: './tittle.component.css',

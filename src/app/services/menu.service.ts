@@ -12,7 +12,7 @@ export interface IMenu {
 export class MenuService {
 
   private listMenu: IMenu[] = [
-    { tittle: 'Agencias', url: '/agencias', icon: '/assets/icons/channel.svg' },
+    { tittle: 'Agencias', url: '/api/agencias', icon: '/assets/icons/channel.svg' },
     { tittle: 'Canales', url: '/canales', icon: '/assets/icons/channel.svg' },
     { tittle: 'Clientes', url: '/clientes', icon: '/assets/icons/clients.svg' },
     { tittle: 'Mecanicos', url: '/mecanicos', icon: '/assets/icons/mechanic.svg' },

@@ -12,6 +12,8 @@ import {MatTableModule} from '@angular/material/table';
 import { FlexModule } from '@angular/flex-layout';
 import {NgScrollbarModule} from 'ngx-scrollbar';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
 
 
 
@@ -25,6 +27,6 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     MatTableModule,
     MatPaginatorModule
   ],
-  exports:[HeaderComponent,PaginatorComponent,TittleComponent, PruebaComponent, ContainerComponent, TableComponent,NgScrollbarModule,FlexModule]
+  exports:[HeaderComponent,PaginatorComponent,TittleComponent, PruebaComponent, ContainerComponent, TableComponent,NgScrollbarModule,FlexModule,MatIconModule,MatButtonModule,MatTableModule]
 })
 export class SharedModule { }
